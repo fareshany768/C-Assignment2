@@ -16,11 +16,17 @@
              Console.WriteLine(number < 0 ? "negative" : "positive"); */
             #endregion
             #region Q3
-            Console.Write("Enter three numbers separated by spaces: ");
-            string[] inputs = Console.ReadLine().Split();
-            int a = int.Parse(inputs[0]), b = int.Parse(inputs[1]), c = int.Parse(inputs[2]);
-            Console.WriteLine($"Max element = {Math.Max(a, Math.Max(b, c))}");
-            Console.WriteLine($"Min element = {Math.Min(a, Math.Min(b, c))}");
+            /*  Console.Write("Enter three numbers separated by spaces: ");
+             string[] inputs = Console.ReadLine().Split();
+             int a = int.Parse(inputs[0]), b = int.Parse(inputs[1]), c = int.Parse(inputs[2]);
+             Console.WriteLine($"Max element = {Math.Max(a, Math.Max(b, c))}");
+             Console.WriteLine($"Min element = {Math.Min(a, Math.Min(b, c))}"); */
+
+            #endregion
+            #region Q4
+            Console.Write("Enter a number: ");
+            int evenOdd = int.Parse(Console.ReadLine());
+            Console.WriteLine(evenOdd % 2 == 0 ? "Even" : "Odd"); 
 
             #endregion
         }
