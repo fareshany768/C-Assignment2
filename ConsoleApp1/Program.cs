@@ -122,6 +122,9 @@ namespace ConsoleApp1
             #region Q23
             //A value 1 will be assigned to d
             #endregion
+            #region Q24
+            // 6 1
+            #endregion
         }
     }
 }
