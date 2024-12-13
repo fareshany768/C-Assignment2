@@ -44,14 +44,21 @@
 
             #endregion
             #region Q9
-             Console.Write("Enter base and exponent separated by space: ");
+            /* Console.Write("Enter base and exponent separated by space: ");
              string[] powerInput = Console.ReadLine().Split();
              int baseNum = int.Parse(powerInput[0]);
              int exp = int.Parse(powerInput[1]);
-             Console.WriteLine(Math.Pow(baseNum, exp)); 
+             Console.WriteLine(Math.Pow(baseNum, exp)); */
             #endregion
             #region Q10
-
+            Console.Write("Enter marks of five subjects separated by spaces: ");
+            string[] marksInput = Console.ReadLine().Split();
+            int[] marks = Array.ConvertAll(marksInput, int.Parse);
+            int total = 0;
+            foreach (var mark in marks) total += mark;
+            double average = total / 5.0;
+            double percentage = average;
+            Console.WriteLine($"Total marks = {total}\nAverage Marks = {average}\nPercentage = {percentage}");
             #endregion
         }
     }
