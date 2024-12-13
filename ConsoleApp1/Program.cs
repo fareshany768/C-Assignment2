@@ -44,11 +44,14 @@
 
             #endregion
             #region Q9
-            Console.Write("Enter base and exponent separated by space: ");
-            string[] powerInput = Console.ReadLine().Split();
-            int baseNum = int.Parse(powerInput[0]);
-            int exp = int.Parse(powerInput[1]);
-            Console.WriteLine(Math.Pow(baseNum, exp));
+             Console.Write("Enter base and exponent separated by space: ");
+             string[] powerInput = Console.ReadLine().Split();
+             int baseNum = int.Parse(powerInput[0]);
+             int exp = int.Parse(powerInput[1]);
+             Console.WriteLine(Math.Pow(baseNum, exp)); 
+            #endregion
+            #region Q10
+
             #endregion
         }
     }
