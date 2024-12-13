@@ -125,6 +125,10 @@ namespace ConsoleApp1
             #region Q24
             // 6 1
             #endregion
+            #region Q25
+            // 7 7
+
+            #endregion
         }
     }
 }
