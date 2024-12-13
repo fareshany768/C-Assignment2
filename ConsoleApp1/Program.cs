@@ -63,7 +63,7 @@
 
             #endregion
             #region Q11
-             Console.Write("Enter month number: ");
+            /* Console.Write("Enter month number: ");
             int month = int.Parse(Console.ReadLine());
             int days = month switch
             {
@@ -71,7 +71,17 @@
                 4 or 6 or 9 or 11 => 30,
                 _ => 31
             };
-            Console.WriteLine($"Days in Month: {days}"); 
+            Console.WriteLine($"Days in Month: {days}"); */
+            #endregion
+            #region Q17
+            Console.Write("Enter three points (x1 y1 x2 y2 x3 y3): ");
+            string[] points = Console.ReadLine().Split();
+            int x1 = int.Parse(points[0]), y1 = int.Parse(points[1]);
+            int x2 = int.Parse(points[2]), y2 = int.Parse(points[3]);
+            int x3 = int.Parse(points[4]), y3 = int.Parse(points[5]);
+            bool collinear = (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1);
+            Console.WriteLine(collinear ? "Points are collinear" : "Points are not collinear");
+
             #endregion
         }
     }
