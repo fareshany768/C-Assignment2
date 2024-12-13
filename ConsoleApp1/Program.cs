@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Q1
+            Console.Write("Enter a number: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine(num % 3 == 0 && num % 4 == 0 ? "Yes" : "No");
+
+            #endregion
         }
     }
 }
