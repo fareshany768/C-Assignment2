@@ -84,12 +84,20 @@
 
             #endregion
             #region Q18
-            Console.Write("Enter time taken for task in hours: ");
-            double time = double.Parse(Console.ReadLine());
-            if (time >= 2 && time <= 3) Console.WriteLine("Highly Efficient");
-            else if (time > 3 && time <= 4) Console.WriteLine("Increase Speed");
-            else if (time > 4 && time <= 5) Console.WriteLine("Training Needed");
-            else Console.WriteLine("Leave the Company");
+            /* Console.Write("Enter time taken for task in hours: ");
+             double time = double.Parse(Console.ReadLine());
+             if (time >= 2 && time <= 3) Console.WriteLine("Highly Efficient");
+             else if (time > 3 && time <= 4) Console.WriteLine("Increase Speed");
+             else if (time > 4 && time <= 5) Console.WriteLine("Training Needed");
+             else Console.WriteLine("Leave the Company"); */
+
+            #endregion
+            #region Q21
+            // number2 will change , number1 still same
+            int number1 = 10, number2 = number1;
+            number2 = 20;
+            Console.WriteLine($"number1: {number1}, number2: {number2}");
+
 
             #endregion
         }
