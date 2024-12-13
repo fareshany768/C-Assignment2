@@ -31,9 +31,16 @@
 
             #endregion
             #region Q5
-            Console.Write("Enter a character: ");
-            char ch = char.ToLower(Console.ReadLine()[0]);
-            Console.WriteLine("aeiou".Contains(ch) ? "vowel" : "consonant");
+            /* Console.Write("Enter a character: ");
+             char ch = char.ToLower(Console.ReadLine()[0]);
+             Console.WriteLine("aeiou".Contains(ch) ? "vowel" : "consonant");
+            */
+            #endregion
+            #region Q7
+            Console.Write("Enter a number: ");
+            int tableNum = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 12; i++)
+                Console.WriteLine($"{tableNum} x {i} = {tableNum * i}");
 
             #endregion
         }
