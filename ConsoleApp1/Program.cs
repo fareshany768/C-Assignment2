@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using System.Drawing;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -94,10 +96,25 @@
             #endregion
             #region Q21
             // number2 will change , number1 still same
-            int number1 = 10, number2 = number1;
+            /* int number1 = 10, number2 = number1;
             number2 = 20;
-            Console.WriteLine($"number1: {number1}, number2: {number2}");
+            Console.WriteLine($"number1: {number1}, number2: {number2}"); */
 
+
+
+            #endregion
+            #region Q22
+            int x = 5;
+            int y = 7;
+            Point p1, p2;
+            p1 = new Point(5, 8);
+            p2 = new Point(7, 10);
+            Console.WriteLine(p2);
+            Console.WriteLine(p1);
+            p2 = p1;
+            Console.WriteLine(p2);
+            Console.WriteLine(p1);
+        
 
             #endregion
         }
