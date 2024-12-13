@@ -104,6 +104,7 @@ namespace ConsoleApp1
 
             #endregion
             #region Q22
+            /*
             int x = 5;
             int y = 7;
             Point p1, p2;
@@ -113,9 +114,13 @@ namespace ConsoleApp1
             Console.WriteLine(p1);
             p2 = p1;
             Console.WriteLine(p2);
-            Console.WriteLine(p1);
-        
+            Console.WriteLine(p1);  
+            */
 
+
+            #endregion
+            #region Q23
+            //A value 1 will be assigned to d
             #endregion
         }
     }
