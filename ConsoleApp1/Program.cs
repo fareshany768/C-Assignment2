@@ -51,14 +51,27 @@
              Console.WriteLine(Math.Pow(baseNum, exp)); */
             #endregion
             #region Q10
-            Console.Write("Enter marks of five subjects separated by spaces: ");
-            string[] marksInput = Console.ReadLine().Split();
-            int[] marks = Array.ConvertAll(marksInput, int.Parse);
-            int total = 0;
-            foreach (var mark in marks) total += mark;
-            double average = total / 5.0;
-            double percentage = average;
-            Console.WriteLine($"Total marks = {total}\nAverage Marks = {average}\nPercentage = {percentage}");
+
+            /* Console.Write("Enter marks of five subjects separated by spaces: ");
+             string[] marksInput = Console.ReadLine().Split();
+             int[] marks = Array.ConvertAll(marksInput, int.Parse);
+             int total = 0;
+             foreach (var mark in marks) total += mark;
+             double average = total / 5.0;
+             double percentage = average;
+             Console.WriteLine($"Total marks = {total}\nAverage Marks = {average}\nPercentage = {percentage}"); */
+
+            #endregion
+            #region Q11
+             Console.Write("Enter month number: ");
+            int month = int.Parse(Console.ReadLine());
+            int days = month switch
+            {
+                2 => 28,
+                4 or 6 or 9 or 11 => 30,
+                _ => 31
+            };
+            Console.WriteLine($"Days in Month: {days}"); 
             #endregion
         }
     }
