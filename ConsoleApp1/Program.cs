@@ -5,16 +5,24 @@
         static void Main(string[] args)
         {
             #region Q1
-           /* Console.Write("Enter a number: ");
-            int num = int.Parse(Console.ReadLine());
-            Console.WriteLine(num % 3 == 0 && num % 4 == 0 ? "Yes" : "No"); */
+            /* Console.Write("Enter a number: ");
+             int num = int.Parse(Console.ReadLine());
+             Console.WriteLine(num % 3 == 0 && num % 4 == 0 ? "Yes" : "No"); */
 
             #endregion
             #region Q2
-            Console.Write("Enter a number: ");
-            int number = int.Parse(Console.ReadLine());
-            Console.WriteLine(number < 0 ? "negative" : "positive"); 
-             #endregion 
+            /* Console.Write("Enter a number: ");
+             int number = int.Parse(Console.ReadLine());
+             Console.WriteLine(number < 0 ? "negative" : "positive"); */
+            #endregion
+            #region Q3
+            Console.Write("Enter three numbers separated by spaces: ");
+            string[] inputs = Console.ReadLine().Split();
+            int a = int.Parse(inputs[0]), b = int.Parse(inputs[1]), c = int.Parse(inputs[2]);
+            Console.WriteLine($"Max element = {Math.Max(a, Math.Max(b, c))}");
+            Console.WriteLine($"Min element = {Math.Min(a, Math.Min(b, c))}");
+
+            #endregion
         }
     }
 }
