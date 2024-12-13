@@ -24,9 +24,16 @@
 
             #endregion
             #region Q4
-            Console.Write("Enter a number: ");
+            /* Console.Write("Enter a number: ");
             int evenOdd = int.Parse(Console.ReadLine());
-            Console.WriteLine(evenOdd % 2 == 0 ? "Even" : "Odd"); 
+            Console.WriteLine(evenOdd % 2 == 0 ? "Even" : "Odd"); */
+
+
+            #endregion
+            #region Q5
+            Console.Write("Enter a character: ");
+            char ch = char.ToLower(Console.ReadLine()[0]);
+            Console.WriteLine("aeiou".Contains(ch) ? "vowel" : "consonant");
 
             #endregion
         }
